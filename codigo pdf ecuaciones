@@ -1,0 +1,107 @@
+\documentclass[12pt,letter paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{chicago}
+\usepackage[left=2.50cm,top=5cm, bottom= 5cm,right=2.50cm]{geometry}
+\usepackage[spanish]{babel}
+\title{Funciones ortogonales}
+
+\author{Cesar Camilo Arteaga Jaramillo  }
+
+
+\begin{document}
+\pagestyle{plain}
+\pagestyle{empty}
+\changepage{3cm}{2cm}{-0.5cm}{-0.5cm}{}{-2cm}{}{}{}
+\noindent
+
+\begin{center}
+\par\vspace{2cm}
+{
+\huge\textbf{
+Universidad del Cauca Sede Norte \\
+Santander de Quilichao \\
+ Facultad de Ingeniería \\[5cm]
+ }
+ }
+ \par\vspace{1cm}
+ {
+ \large\textbf{Ecuaciones Diferenciales \\ Profesor: Jhonatan Collazos Ramírez \\ Tema: Funciones Ortogonales
+ }
+ }
+ \par\vspace{3cm}
+ {
+ \large\textbf{Estudiante: Cesar Camilo Arteaga Jaramillo \\ Fecha: Agosto 29 del 2022
+ }
+ }
+ \par\vspace{3cm}
+ 
+\end{center}
+\clearpage
+
+
+\section{Introducción}
+En ciertas áreas de las matemáticas avanzadas, a una función se la considera como la generalización de un vector. En esta ocasión se estudiará los conceptos vectoriales de producto interno, o producto escalar y la ortogonalidad de vectores que pueden hacerse extensivos a funciones.
+Para ello se debe recordar como se trabaja el producto punto de dos vectores considerando los vectores en un espacio tridimensional (u.v), cuyas componentes de cada vector son las siguientes:
+$$u=u_1i+u_2j+u_3k.$$
+$$v=v_1i+v_2j+v_3k.$$ 
+El producto interno escalar de u y v se obtiene de la suma de los productos de sus componentes:
+
+
+$$\textbf{u.v}= u_1v_1+u_2v_2+u_3v_3= \sum_{k=1}^{3}U_k V_k$$. 
+
+Para que el producto interno u.v se cumpla, debe obedecer las siguietes propiedades: 
+\begin{enumerate}
+    \item (u.v)=(v.u)
+    \item (ku.v)=k(u.v)    \textbf{k es un escalar}
+    \item (u+v.k)=(u.k)+(v.k)
+    
+\end{enumerate}
+
+
+Teniendo en conocimiento esto generalizamos que para las funciones definidas en un intervalo [a,b] tengan las mismas propiedades.
+\newpage
+
+\section{Definición}
+
+Para definir una función ortogonal,partimos de $f_1 y f_2$ son funciones definidas en un intervalo [a,b] y la integral definida en el intervalo del producto $f_1(x) f_2(x)$ tiene como propiedades, las mismas del producto interno y mientras que la integral exista definiremos así:
+\begin{enumerate}
+    \item \textbf{producto interno de funciones:}
+    
+    El producto interno de dos funciones $f_1 y f_2$ en un intevalo [a,b] es el número 
+\begin{equation}
+    (f_1.f_2)=\int_{a}^{b}f_1(x) f_2(x)dx
+\end{equation}
+Motivados por el hecho de que dos verctores u y v son ortogonales siempre que su producto interno sea igual a 0 definimos las funciones ortogonales de la misma forma.
+
+\item \textbf{Funciones ortogonales}
+
+Se dice que dos funciones $f_1 y f_2$ son ortogonales en un intervalo [a,b] si\cite{escobar2004uso}:
+\begin{equation}
+    (f_1.f_2)=\int_{a}^{b}f_1(x) f_2(x)dx= 0
+\end{equation}
+
+\end{enumerate}
+
+
+\section{Ejemplo}
+Muestre que las funciones $f_1(x)=x^{2}$   y    $f_2(x)= x^{3}$ son ortogonales en el intervalo [-1,1]
+
+$$(f_1.f_2)=\int_{a}^{b}f_1(x)f_2(x)dx$$
+
+
+$$f_1(x).f_2(x)=\int_{-1}^{1} x^{2} x^{3}dx=\int_{-1}^{1} x^{5}dx$$
+$$= \frac{x^{6}}{6}[_{-1}^{1}= \frac{(1)^{6}}{6}-\frac{(-1)^{6}}{6}=\frac{1}{6}-\frac{1}{6} =0$$
+
+\newpage
+
+\section{Referencias}
+\bibliographystyle{chicago}
+\bibliography{ref}
+
+    
+\end{document}
