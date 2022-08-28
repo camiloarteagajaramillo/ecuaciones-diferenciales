@@ -1,0 +1,9 @@
+%demostrar que las funciones f(x)=x^2 y f(x)=x^3 son ortogonales en el
+%intervalo[-1,1]
+clear all
+clc
+syms x
+f=input('ingresar la funcion a integrar: ')
+a=input('ingresar el intervalo inferior')
+b=input('ingresar el intervalo superior')
+i=int(f,x,a,b)
